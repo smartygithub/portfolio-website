@@ -1,8 +1,10 @@
 # 💼 Meghashyam's Portfolio Website
 
-Welcome to my personal portfolio website built with React and deployed via GitHub Pages.
+Welcome to my personal portfolio website built with **React** and deployed using **GitHub Pages**.
 
-🔗 [Visit Live Website](https://smartygithub.github.io/portfolio-website/)
+🔗 **[Visit Live Website](https://smartygithub.github.io/portfolio-website/)**
+
+---
 
 ## 🚀 Tech Stack
 - React.js
@@ -10,10 +12,14 @@ Welcome to my personal portfolio website built with React and deployed via GitHu
 - JavaScript
 - GitHub Pages
 
+---
+
 ## 📂 Features
-- About Me
-- Projects Section
-- Contact Links (LinkedIn, GitHub)
+- 👤 About Me
+- 📁 Projects Section
+- 🔗 Contact Links (LinkedIn, GitHub)
+
+---
 
 ## 📦 How to Run Locally
 
