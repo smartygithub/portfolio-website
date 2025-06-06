@@ -1,59 +1,106 @@
-import React from 'react';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', lineHeight: 1.6, maxWidth: '800px', margin: 'auto', padding: '20px' }}>
-      <h1>👋 Hi, I’m Meghashyam</h1>
-      <p>I’m a Data Science & AI enthusiast passionate about Machine Learning, Python, and solving real-world problems through data-driven solutions.</p>
+    <div>
+      {/* 🔝 Navigation Bar */}
+      <nav style={styles.nav}>
+        <a href="#about" style={styles.link}>About</a>
+        <a href="#work" style={styles.link}>My Work</a>
+        <a href="#resume" style={styles.link}>Resume</a>
+        <a href="#contact" style={styles.link}>Contact</a>
+      </nav>
 
-      <a
-        href="https://github.com/smartygithub"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ textDecoration: 'none' }}
-      >
-        <button style={{ margin: '20px 0', padding: '10px 20px', background: '#333', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>
-          View My GitHub
-        </button>
-      </a>
-
-      <h2>💼 My Projects</h2>
-
-      <div style={{ background: '#f4f4f4', padding: '20px', borderRadius: '10px', marginBottom: '20px' }}>
-        <h3>🕵️ Anomaly Detection in Credit Card Transactions</h3>
+      {/* 🙋‍♂️ About Section */}
+      <section id="about" style={styles.section}>
+        <h1>Hi, I’m Meghashyam 👋</h1>
         <p>
-          A machine learning project developed as part of CS 685/785. It uses SVD-based anomaly detection to identify fraudulent transactions in an imbalanced credit card dataset. Techniques include dimensionality reduction, reconstruction error thresholding, logistic regression, and clustering analysis.
+          I’m a Data Science & AI enthusiast passionate about solving real-world problems using
+          Machine Learning, Python, and Analytics.
         </p>
-        <p><strong>Tech Stack:</strong> Python, Jupyter, NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn</p>
-        <a href="https://github.com/smartygithub/Anomaly_Detection" target="_blank" rel="noopener noreferrer">
-          🔗 View on GitHub
-        </a>
-      </div>
+      </section>
 
-      {/* Add more project blocks here in same format if needed */}
-
-      <h2>📫 Contact Me</h2>
-      <ul>
-        <li>
-          🔗 LinkedIn:{" "}
-          <a href="https://www.linkedin.com/in/megha-shyam-931327264/" target="_blank" rel="noopener noreferrer">
-            Meghashyam Adimallam
+      {/* 💼 My Work Section */}
+      <section id="work" style={styles.section}>
+        <h2>💼 My Projects</h2>
+        <h3>Anomaly Detection in Credit Card Transactions</h3>
+        <p>
+          A machine learning project that uses SVD-based anomaly detection to flag fraudulent
+          transactions.
+          <br />
+          <a
+            href="https://github.com/smartygithub/Anomaly_Detection"
+            target="_blank"
+            rel="noreferrer"
+          >
+            🔗 View Project on GitHub
           </a>
-        </li>
-        <li>
+        </p>
+        {/* Add more projects below */}
+      </section>
+
+      {/* 📄 Resume Section */}
+      <section id="resume" style={styles.section}>
+        <h2>📄 Resume</h2>
+        <p>
+          View or download my resume here:
+          <br />
+          <a
+            href="https://drive.google.com/your-resume-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            📎 View Resume
+          </a>
+        </p>
+      </section>
+
+      {/* 📬 Contact Section */}
+      <section id="contact" style={styles.section}>
+        <h2>📬 Contact</h2>
+        <p>
           📧 Email:{" "}
           <a href="mailto:meghashyamadimalla2003@gmail.com">
             meghashyamadimalla2003@gmail.com
           </a>
-        </li>
-      </ul>
-
-      <footer style={{ marginTop: '40px', fontSize: '0.9em', color: '#555' }}>
-        <hr />
-        <p>&copy; {new Date().getFullYear()} Meghashyam Adimallam. All rights reserved.</p>
-      </footer>
+          <br />
+          🔗 LinkedIn:{" "}
+          <a
+            href="https://www.linkedin.com/in/megha-shyam-931327264/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Meghashyam Adimallam
+          </a>
+        </p>
+      </section>
     </div>
   );
 }
+
+const styles = {
+  nav: {
+    position: "fixed",
+    top: 0,
+    width: "100%",
+    backgroundColor: "#222",
+    padding: "1rem",
+    display: "flex",
+    justifyContent: "center",
+    gap: "2rem",
+    zIndex: 1000,
+  },
+  link: {
+    color: "white",
+    textDecoration: "none",
+    fontWeight: "bold",
+  },
+  section: {
+    padding: "100px 20px",
+    maxWidth: "800px",
+    margin: "auto",
+  },
+};
 
 export default App;
