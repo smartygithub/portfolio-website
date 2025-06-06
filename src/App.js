@@ -20,7 +20,8 @@ function App() {
       <section id="about" className="section">
         <h1>Hi, I’m Meghashyam 👋</h1>
         <p>
-          I’m a Data Science & AI enthusiast passionate about Machine Learning, Python, and solving real-world problems.
+          I’m a Data Science & AI enthusiast passionate about Machine Learning,
+          Python, and solving real-world problems.
         </p>
       </section>
 
@@ -29,7 +30,8 @@ function App() {
         <div className="project">
           <h3>Anomaly Detection</h3>
           <p>
-            A machine learning project using SVD to detect fraudulent transactions in credit card data.
+            A machine learning project using SVD to detect fraudulent
+            transactions in credit card data.
           </p>
           <a
             href="https://github.com/smartygithub/Anomaly_Detection"
@@ -39,14 +41,36 @@ function App() {
             View on GitHub
           </a>
         </div>
-        {/* Add more projects here */}
       </section>
 
       <section id="contact" className="section">
         <h2>📫 Contact</h2>
-        <p>Email: <a href="mailto:meghashyamadimalla2003@gmail.com">meghashyamadimalla2003@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/megha-shyam-931327264/" target="_blank" rel="noopener noreferrer">Meghashyam Adimallam</a></p>
-        <p>GitHub: <a href="https://github.com/smartygithub" target="_blank" rel="noopener noreferrer">smartygithub</a></p>
+        <p>
+          Email:{" "}
+          <a href="mailto:meghashyamadimalla2003@gmail.com">
+            meghashyamadimalla2003@gmail.com
+          </a>
+        </p>
+        <p>
+          LinkedIn:{" "}
+          <a
+            href="https://www.linkedin.com/in/megha-shyam-931327264/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meghashyam Adimallam
+          </a>
+        </p>
+        <p>
+          GitHub:{" "}
+          <a
+            href="https://github.com/smartygithub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            smartygithub
+          </a>
+        </p>
       </section>
     </div>
   );
