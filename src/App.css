@@ -1,27 +1,16 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f9fc;
 }
 
 .navbar {
-  background-color: #282c34;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li {
-  margin: 0 15px;
+  gap: 30px;
+  padding: 15px;
+  background-color: #282c34;
 }
 
 .navbar a {
@@ -30,12 +19,29 @@ body {
   font-weight: bold;
 }
 
-a:hover {
+.navbar a:hover {
   color: #61dafb;
   transition: 0.3s ease;
 }
 
 .section {
-  padding: 80px 20px;
-  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.resume-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.resume-button:hover {
+  background-color: #61dafb;
+  color: #282c34;
+  transition: 0.3s ease;
 }
