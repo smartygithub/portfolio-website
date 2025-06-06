@@ -1,24 +1,34 @@
+/* App.css */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
   scroll-behavior: smooth;
 }
 
-.navbar {
+nav {
+  background-color: #111;
+  color: white;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  background-color: #282c34;
-  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
-.navbar a {
+nav h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav div a {
+  margin: 0 1rem;
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 a:hover {
@@ -26,16 +36,54 @@ a:hover {
   transition: 0.3s ease;
 }
 
-.section {
+section {
   padding: 4rem 2rem;
   text-align: center;
 }
 
-.project {
-  background: #fff;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 600px;
+#hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 6rem 2rem;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #61dafb;
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.project-card {
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
 }
