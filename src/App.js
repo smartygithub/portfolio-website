@@ -1,59 +1,55 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      {/* Navigation Bar */}
+      {/* Navbar */}
       <nav className="navbar">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">My Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       {/* Hero Section */}
-      <header className="hero">
-        <h1>Hi, I’m Meghashyam 👋</h1>
-        <p>
-          I’m a Data Science & AI enthusiast passionate about Machine Learning, Python, and solving real-world problems.
-        </p>
-        <a className="cta" href="#work">View My Projects</a>
-      </header>
+      <section id="home" className="hero">
+        <h1>Hi, I'm Meghashyam 👋</h1>
+        <p>Aspiring Data Scientist & AI Engineer</p>
+        <a href="#work" className="btn">View My Work</a>
+      </section>
 
       {/* About Section */}
       <section id="about">
         <h2>About Me</h2>
         <p>
-          I'm currently pursuing a degree in Data Science. I enjoy building machine learning models, analyzing data, and exploring new technologies in AI. My portfolio reflects my passion for combining code, creativity, and data to build impactful solutions.
+          I’m a Data Science & AI enthusiast passionate about Machine Learning, Python,
+          and solving real-world problems. I'm currently building projects in ML, DL,
+          and cloud, aiming to make intelligent systems more accessible.
         </p>
       </section>
 
-      {/* Work Section */}
+      {/* Work / Projects Section */}
       <section id="work">
-        <h2>My Projects</h2>
+        <h2>My Work</h2>
         <div className="project">
           <h3>Anomaly Detection</h3>
-          <p>A machine learning project using SVD to detect fraudulent transactions in credit card data.</p>
-          <a href="https://github.com/smartygithub/Anomaly_Detection" target="_blank" rel="noopener noreferrer">
+          <p>
+            A machine learning project using SVD to detect fraudulent transactions in
+            credit card data.
+          </p>
+          <a href="https://github.com/smartygithub/Anomaly_Detection" target="_blank" rel="noreferrer">
             View on GitHub
           </a>
         </div>
+        {/* Add more projects here if needed */}
       </section>
 
       {/* Contact Section */}
       <section id="contact">
         <h2>Contact</h2>
-        <p>
-          Connect with me:
-          <br />
-          <a href="https://www.linkedin.com/in/megha-shyam-931327264/" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <br />
-          Email: <a href="mailto:meghashyamadimalla2003@gmail.com">meghashyamadimalla2003@gmail.com</a>
-        </p>
+        <p>Email: <a href="mailto:meghashyamadimalla2003@gmail.com">meghashyamadimalla2003@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/megha-shyam-931327264/" target="_blank" rel="noreferrer">Meghashyam Adimallam</a></p>
       </section>
 
       {/* Footer */}
