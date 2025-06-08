@@ -1,89 +1,44 @@
-/* App.css */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  scroll-behavior: smooth;
-}
-
-nav {
-  background-color: #111;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav h1 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-nav div a {
-  margin: 0 1rem;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-a:hover {
-  color: #61dafb;
-  transition: 0.3s ease;
-}
-
-section {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-#hero {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: white;
-  padding: 6rem 2rem;
-}
-
-#hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-#hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-button {
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  background-color: #61dafb;
-  border: none;
-  color: black;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #21a1f1;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .project-card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 700px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #00ffd5;
+  text-align: left;
 }
 
-footer {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 213, 0.3);
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  color: #00ffd5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
 }

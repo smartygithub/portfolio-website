@@ -1,0 +1,51 @@
+/* src/HeroSection.css */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.animated-text {
+  font-size: 1.5rem;
+  color: #00ffd5;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.scroll-btn {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #00ffd5;
+  text-decoration: none;
+  animation: bounce 2s infinite;
+  display: inline-block;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  } 
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
